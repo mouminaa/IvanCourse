@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Géoportail ONU</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="Page-d'accueil.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+	<style type="text/css">
+	.slider{
+		width: 650px;
+		height: 450px;
+		overflow: hidden;
+	}
+	.slides{
+		width: calc(650px * 5);
+		animation: glisse 10s infinite;
+	}
+	.slide{
+		float: left;
+	}
+	@keyframes glisse {
+		0% {
+			transform: translateX(0);
+		}
+		10% {
+			transform: translateX(0);
+		}
+		20% {
+			transform: translateX(-650px);
+		}
+		30% {
+			transform: translateX(-650px);
+		}
+		40% {
+			transform: translateX(-1300px);
+		}
+		50% {
+			transform: translateX(-1300px);
+		}
+		60%{
+			transform: translateX(-1950px);
+		}
+		70% {
+			transform: translateX(-1950px);
+		}
+		80%{
+			transform: translateX(-2600px);
+		}
+		90% {
+			transform: translateX(-2600px);
+		}
+		100% {
+			transform: translateX(0);
+		}
+	}
+</style>
+	<body>
+		<nav>
+			<ul>
+				<h1 class="logoh"><img src="DT.png" style="width: 30px; height: 25px">Géoportail</h1>
+				<li class="menu-Accueil"><a href="Page-d'accueil.html"><i class="fa fa-home" aria-hidden="true"></i>Accueil</a></li>
+				<li class="menu-Cartographie"><a href="cartographie.html"><i class="fa fa-picture-o" aria-hidden="true"></i> Cartographie</a>
+					<ul class="submenu">
+						<li><a href="#">Cartographie des ONU existants</a></li>
+						<li><a href="#">Cartographie des ONU planifier</a></li>
+					
+					</ul>
+				</li>
+				<li class="menu-savoir"><a href="savoir.html"><i class="fa fa-question-circle" aria-hidden="true"></i> Savoir plus sur les ONU</a>
+					<ul class="submenu">
+						<li><a href="#">C'est quoi les ONU</a></li>
+						<li><a href="#">Qu'est-ce qu'ils contiennent</a></li>
+						<li><a href="#">Comment ils fonctionnent</a></li>
+					</ul>
+				</li>
+				<li class="menu-contact"><a href="Contact.html"><i class="fa fa-address-book"></i>Contact</a></li>
+				<li class="menu-en"><a href=""><i class="fa fa-language"></i>EN</a></li>
+			</ul>
+		</nav>
+
+		<section class="gen">
+				<div class="titre" style="position: absolute; text-align: center; width: 1200px; top: 150px">
+					<h1 class="Bienvenue">Bienvenue le Géoportail des ONU de Djibouti Télécom</h1>
+				</div>
+				<div class="img">
+					<img src="a-l-interieur-bande-passante-bouchon-cable-2881232.jpg" style="width: 100%; height: 630px" alt="image du site">
+				</div>
+		</section>
+		<br><br><br><br>
+		<div style="font-family: 'Cambria', sans-serif; border: 1px solid black; width: 650px; height: 450px; margin-left: 10px; text-align: center; display: inline-block; float: left; font-size: 19px;"><h2>Source de données</h2><br>Le Géoportail s'appuie sur les référentiels de Djibouti Télécom pour vous proposer une information offcielle et fiable<br><br><br><br><img src="DT.png"></div>
+		<div class="Images">
+			<div class="slider">
+				<div class="slides">
+					<div class="slide"><img src="DT1.jpg" alt=""></div>
+					<div class="slide"><img src="111.jpg" alt=""></div>
+					<div class="slide"><img src="14.jpg" alt=""></div>
+					<div class="slide"><img src="13.jpg" alt=""></div>
+					<div class="slide"><img src="11.jpg" alt=""></div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="Logo"><h1 style="color: #fff; margin-left: 200px">Utiliser le Géoportail</h1><iframe width="605px" height="366px" style="border: 1px solid black; margin-left: 20px" src="VID-20181221-WA0006.mp4" frameborder="0" allowfullscreen></iframe></div>
+
+		<div style="font-family: 'Cambria', sans-serif; border: 1px solid black; width: 650px; height: 460px; margin-right: 10px; margin-top: 25px; display: inline-block; float: right;text-align: center; font-size: 19px;"><h2>Géoportail</h2><br>Ce géoportail a été mise en place par deux étudiants de l'université de Djibouti dans un projet tutoré.<br>Il a pour vocation de faciliter la localisation et la planification des ONU de Djibouti Télécom et est construit dans un logique d'ouverture et d'interopérabilité des données.<br><br><br>Le site géoportail facilite l'accès à l'information géographique de référence, c'est-à-dire une information publique et de source officielle sur l'entreprise de Djibouti Télécom.<br> Cliquer <a href="#">ici</a> pour voir la localisation des ONU existants.<br>Et <a href="#">ici</a> pour visualiser la planification des nouveaux répartiteurs.</div>
+	
+
+		<footer><div>Contact>>><a href="Contact.html" style="text-decoration: none; list-style-type: none; color: #fff">projet_tutoré.onu.2019-2020@gmail.com</a> <br> Université de Djibouti-département du DUT <br> univ.edu.dj</div></footer>
+	</body>
+</html>
