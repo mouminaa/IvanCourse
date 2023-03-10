@@ -1,8 +1,9 @@
-def test_integration():
-    html1 = """contact.html"""
-    html2 = """ D:/2em_semetre/Auto/Учебные материалы/exercice/localweb/momo/Page-d'accueil.html"""
-    expected_titles = [
-        'Titre de l\'article 1', 'Titre de l\'article 2', 'Titre de l\'article 3',
-        'Titre de l\'article 4', 'Titre de l\'article 5'
-    ]
-    assert extract_article_titles(html1 + html2) == expected_titles
+from bs4 import BeautifulSoup
+import requests
+
+Adresse_HTTP = requests.get("https://www.larousse.fr/dictionnaires/francais/rouge/70007")
+soup = BeautifulSoup(Adresse_HTTP.content, 'html.parser')
+links = soup.find_all('a')
+with open('links.txt', 'w') as f:
+    for link in links:
+        f.write(link.get('href') + '\n')
