@@ -8,7 +8,7 @@ tika.initVM()
 
 # Liste des chemins vers les fichiers à traiter
 # List of paths to files to process
-files_path = ['momo.pdf', 'DBSCAN.docx']
+files_path = ['momo.pdf', 'DBSCAN.docx', 'sample2.djvu']
 
 # Boucle sur les fichiers
 # Loop over files
