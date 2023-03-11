@@ -1,0 +1,44 @@
+textual content of input/DBSCAN.docx:
+
+
+
+
+
+
+
+
+
+
+24.DBSCAN
+
++ не нужно задавать количество кластеров, как в K-means
+
++ умеет работать с не сферическими данными, в отличии от K-means
+
++ не чувствителен к шумам
+
+-плохо работает, когда шары соединены перемычками, он тогда может по этой перемычке пройти и посчитать эти два шара как один кластер
+
+25. Spectral clustering
+
+Метод основан на теории графов и собственных значениях матрицы Лапласа(λ называется собственным значением матрицы А, если существует вектор x такой, что Ax = λx).
+
+Шаги алгоритма
+
+Вычисляем расстояния от каждой вершины до каждой и каждую вершину соединяем с K ближайшими соседями, так у нас формируется матрица смежности. Или можем выбрать некоторое ε и соединять вершину с вершинами из ε окрестности, чтоб тож получить матрицу смежности
+Строим матрицу Лапласа L = D - A, находим собственные числа, сколько будет нулевых собственных чисел, столько будет кластеров и с помощью собственных векторов этой матрицы Лапласа получаем центры
+Запускаем K-means в этом графе, с количеством кластеров и центрами, которые мы получили из матрицы Лапласа
+
++умеет работать с не сферическими данными
+
+
+Meta Data:
+X-TIKA:Parsed-By: ['org.apache.tika.parser.DefaultParser', 'org.apache.tika.parser.microsoft.ooxml.OOXMLParser']
+extended-properties:DocSecurityString: None
+X-TIKA:Parsed-By-Full-Set: ['org.apache.tika.parser.DefaultParser', 'org.apache.tika.parser.microsoft.ooxml.OOXMLParser']
+X-TIKA:content_handler: ToTextContentHandler
+X-TIKA:parse_time_millis: 46
+X-TIKA:embedded_depth: 0
+resourceName: b'DBSCAN.docx'
+Content-Length: 7126
+Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document

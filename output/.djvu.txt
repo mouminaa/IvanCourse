@@ -1,0 +1,10 @@
+textual content of input/test.djvu:
+
+Meta Data:
+X-TIKA:Parsed-By: org.apache.tika.parser.EmptyParser
+X-TIKA:Parsed-By-Full-Set: org.apache.tika.parser.EmptyParser
+X-TIKA:parse_time_millis: 7
+X-TIKA:embedded_depth: 0
+resourceName: b'test.djvu'
+Content-Length: 903797
+Content-Type: image/vnd.djvu
