@@ -5,7 +5,7 @@ from tika import parser
 tika.initVM()
 
 # Liste des chemins vers les fichiers à traiter
-chemins_fichiers = ['momo.pdf', 'Ivancours.docx']
+chemins_fichiers = ['momo.pdf', 'DBSCAN.docx']
 
 # Boucle sur les fichiers
 for chemin_fichier in chemins_fichiers:
