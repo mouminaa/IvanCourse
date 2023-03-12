@@ -37,7 +37,7 @@ X-TIKA:Parsed-By: ['org.apache.tika.parser.DefaultParser', 'org.apache.tika.pars
 extended-properties:DocSecurityString: None
 X-TIKA:Parsed-By-Full-Set: ['org.apache.tika.parser.DefaultParser', 'org.apache.tika.parser.microsoft.ooxml.OOXMLParser']
 X-TIKA:content_handler: ToTextContentHandler
-X-TIKA:parse_time_millis: 218
+X-TIKA:parse_time_millis: 623
 X-TIKA:embedded_depth: 0
 resourceName: b'DBSCAN.docx'
 Content-Length: 7126
