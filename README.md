@@ -10,4 +10,3 @@
 ### Mumina
 ### Jia
 
-## To do: DJVU Implementation needs revisiting.
