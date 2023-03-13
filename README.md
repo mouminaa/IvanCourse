@@ -6,7 +6,7 @@
 ###  Check the results in the `output`, `output_djvu` folders.
 
 ## Team Members 
-### Taku
-### Mumina
-### Jia
+### Takudzwa - QA Eng
+### Mumina - Software Dev
+### Zhang Jia - PM
 
