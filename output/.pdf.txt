@@ -206,7 +206,7 @@ pdf:charsPerPage: ['157', '471', '29', '46', '500', '123', '13', '288', '572', '
 access_permission:extract_content: true
 access_permission:can_print: true
 X-TIKA:Parsed-By: ['org.apache.tika.parser.DefaultParser', 'org.apache.tika.parser.pdf.PDFParser']
-X-TIKA:parse_time_millis: 271
+X-TIKA:parse_time_millis: 186
 X-TIKA:embedded_depth: 0
 access_permission:can_modify: true
 pdf:containsDamagedFont: false

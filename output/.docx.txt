@@ -71,7 +71,7 @@ resourceName: ["b'chinese.docx'", 'image1.png']
 extended-properties:Template: Normal
 X-TIKA:Parsed-By: ['org.apache.tika.parser.DefaultParser', 'org.apache.tika.parser.microsoft.ooxml.OOXMLParser', ['org.apache.tika.parser.DefaultParser', 'org.apache.tika.parser.image.ImageParser']]
 extended-properties:DocSecurityString: None
-X-TIKA:parse_time_millis: ['119', '6']
+X-TIKA:parse_time_millis: ['90', '4']
 X-TIKA:embedded_depth: ['0', '1']
 meta:page-count: 3
 dc:publisher: 
