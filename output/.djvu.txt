@@ -3,7 +3,7 @@ textual content of input/sample.djvu:
 Meta Data:
 X-TIKA:Parsed-By: org.apache.tika.parser.EmptyParser
 X-TIKA:Parsed-By-Full-Set: org.apache.tika.parser.EmptyParser
-X-TIKA:parse_time_millis: 2
+X-TIKA:parse_time_millis: 3
 X-TIKA:embedded_depth: 0
 resourceName: b'sample.djvu'
 Content-Length: 4034

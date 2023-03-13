@@ -197,7 +197,7 @@ meta:character-count: 1147
 extended-properties:Template: Normal.dot
 X-TIKA:Parsed-By: ['org.apache.tika.parser.DefaultParser', 'org.apache.tika.parser.microsoft.OfficeParser', ['org.apache.tika.parser.DefaultParser', 'org.apache.tika.parser.image.ImageParser'], ['org.apache.tika.parser.DefaultParser', 'org.apache.tika.parser.microsoft.WMFParser'], ['org.apache.tika.parser.DefaultParser', 'org.apache.tika.parser.microsoft.OfficeParser']]
 extended-properties:TotalTime: ['24600000000', '0']
-X-TIKA:parse_time_millis: ['120', '12', '10', '14']
+X-TIKA:parse_time_millis: ['79', '3', '6', '8']
 X-TIKA:embedded_depth: ['0', '1', '1', '1']
 Content-Length: 32768
 meta:page-count: 1

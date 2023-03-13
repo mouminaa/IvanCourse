@@ -1,4 +1,4 @@
-textual content of input/DBSCAN.docx:
+textual content of input/chinese.docx:
 
 
 
@@ -9,36 +9,95 @@ textual content of input/DBSCAN.docx:
 
 
 
-24.DBSCAN
 
-+ не нужно задавать количество кластеров, как в K-means
 
-+ умеет работать с не сферическими данными, в отличии от K-means
 
-+ не чувствителен к шумам
 
--плохо работает, когда шары соединены перемычками, он тогда может по этой перемычке пройти и посчитать эти два шара как один кластер
 
-25. Spectral clustering
 
-Метод основан на теории графов и собственных значениях матрицы Лапласа(λ называется собственным значением матрицы А, если существует вектор x такой, что Ax = λx).
 
-Шаги алгоритма
 
-Вычисляем расстояния от каждой вершины до каждой и каждую вершину соединяем с K ближайшими соседями, так у нас формируется матрица смежности. Или можем выбрать некоторое ε и соединять вершину с вершинами из ε окрестности, чтоб тож получить матрицу смежности
-Строим матрицу Лапласа L = D - A, находим собственные числа, сколько будет нулевых собственных чисел, столько будет кластеров и с помощью собственных векторов этой матрицы Лапласа получаем центры
-Запускаем K-means в этом графе, с количеством кластеров и центрами, которые мы получили из матрицы Лапласа
 
-+умеет работать с не сферическими данными
+
+
+
+
+
+
+
+
+
+
+研修计划：基于SLAM的智能农用车关键技术研究
+一、拟研究课题国内外研究情况及水平
+  智能农业车辆的实时定位和地图创建（SLAM）问题是一个高度综合的跨学科课题，结合了图像处理、计算机视觉、人工智能和机器人技术。在户外农场等复杂的空间环境中移动是智能农业机器人的基本能力，受复杂自然环境与当前研究水平的限制，要让机器人像智能生物那样，具备空间认知与导航能力，面对陌生的外部环境，敢于探索并能够安全返回，而且运行过程中对实时性的要求，构成了这一问题的复杂性。考虑到具有很高的学术价值和广泛的应用前景，智慧农业中的SLAM问题已成为了学术界非常活跃的研究热点。SLAM问题很难收敛构建的地图，因为位置估计误差和观测误差交替影响着位置确定和地图构建。Tian等人（2012）通过设置60个人工路标进行基于三目立体视觉的实验，提出使用Gray-EKF算法，实验表明，与传统的EKF SLAM算法相比，经过精度权重校准的三目摄像头具有更高的测量精度。Tim（2006）等人提出使用EKF-SLAM算法，该算法主要面向路标特征图。它假定特征是可以相互区分的，机器人运动和观测噪声满足高斯分布，并使用最大似然估计进行数据关联和卡尔曼滤波进行状态更新。然而，该方法需要足够数量的不同路标和一个复杂的算法来更新过滤器。同时，需要构建协方差矩阵，每个时间点的状态向量中新姿势的增加将导致状态向量和协方差的无限制增加，更新协方差所花费的时间将无限增加。Dijkstra(1956)提出Dijkstra算法。该算法基于贪心算法策略，在构型空间中遍历到起始点距离最近且未被遍历过的顶点的临近点，直到扩展到目标点，并选择最短的路径。Hart等(1968)提出了 A*算法，它结合了 Dijkstra 算法和启发式算法的优点，根据启发函数在连通图中寻找最优路径。Stentz（1994）提出了一种新的路径规划算法，即D*算法。该算法能够在未知或变化的环境中规划出最佳的机器人路径，解决了A*算法无法避开障碍物的问题。Daniel等（2014）提出了theta*算法。该算法在A*算法的基础上进行修正，判断生成路径上的两个节点之间是否存在视线，并连接两个节点形成新的路径。相对于A*算法，theta*算法可以获得自然的平滑路径，实现非网格地图的寻路计算。Pak J等(2022)分析比较了Dijkstra算法、A*算法、RRT算法，最后将 A* 算法用于温室大棚中进行定位。Pierzchała（2018）提出了应用于林业环境的Graph-SLAM方法，采用3D LiDAR和立体相机对林业车辆进行精确定位。综上所述，Dijkstra 和 A*算法等基于图搜索的路径规划方法通过解析的方法进行离散化，确保存在得到可行解。但由于计算量大，难以应用于高维空间的路径规划。而基于随机采样路径规划方法基于概率进行随机采样离散化，只需要计算机器人姿态是否存在碰撞，可以有效解决高维空间和复杂约束中的路径规划问题。但是，其效率和碰撞检测模块有关，在低维情况中的效率较差。此外，大多数学者基于SLAM的研究主要应用于室内场合，而对于受环境光影响较大的室外农业场景的SLAM研究相关文献较少。同时，农田的不同地形也大大影响了智能农业机器人的正常工作。单一的传感器也会影响定位的准确性，因此，多传感器融合是解决智能农业问题的最有效途径。
+二、拟留学国别、单位及选择原因
+  本人拟到俄罗斯圣彼得堡国立大学应用数学与过程控制学院编程技术系人工智能与大数据专业学习，在留学期间拟研究基于SLAM的智慧农业农用车关键技术研究问题。俄罗斯的基于应用数学的人工智能算法研究具有悠长的历史，该校应用数学与过程控制学院成立于1969年，直到目前仍然在俄罗斯联邦大学同类学院中处于领先地位。编程技术系成立于1989年，最初创建者主要是参与普列谢茨克航天发射场火箭和空间技术测试结果计算机处理项目的负责人，后来，该部门的研究方向逐渐改变，现阶段，主要基于应用数学的人工智能算法的研究，目前已发表高水平期刊论文40多篇。此外该学院与中国青岛大学数学与统计学院、哈尔滨工业大学、延安大学、德国柏林自由大学等建立了长期的交流与合作，已主持多项俄罗斯科学基金会项目。该校浓厚的学术氛围和丰富的图书馆资源都是我选择到这里学习的原因。此外，我的导师布列格诺夫·伊万副教授所属的农业科学团队成员隶属于俄罗斯科学院农业物理研究所，基于SLAM的智能农用车的关键技术研究得到了俄罗斯科学院农业物理研究所的支持。
+三、科研相关工作概述及达到出国学习预期目标的可行性
+  在SLAM研究上，本人对图像处理及计算机视觉的识别问题有一定的研究，也一直研读《视觉SLAM十四讲从理论到实践》专著和近五年最新文献，以此同时，本人在西安交通大学智能机器人创新研究院实习了两年，积累了一定的科研经验，以第一作者身份公开发表SCI检索1篇，EI检索2篇，并参与1项陕西省科技厅基金项目。由于对基于深度卷积自编码器的图像特征提取问题和基于深度摄像机的机器人环境信息识别方法等问题的深入了解，对用于数据分析的 Python 语言、统计学的学习掌握，参与国际会议与优秀博导交流的感受及前期相关研究的深入探讨，我认为对此研究方案是可行的。
+四、出国学习目的、预期目标、计划、实施方法及所需时间
+  本人出国学习主要有三方面的预期。俄罗斯圣彼得堡国立大学是著名的综合性大学，该校共产生了9位诺贝尔奖获得者，以及3枚菲尔兹奖获得者，我希望能学习一些国内没有提供的课程，特别是对于应用数学方面的研究，并且布列格诺夫·伊万副教授是人工智能与大数据方向的专家，其做了大量优秀的研究工作，我希望能与他学习相关的人工智能算法，并将其应用于智慧农业SLAM研究中，并与他合作完成1-2篇高水平论文。第二，有许多来自全球的著名学者到圣彼得堡国立大学访学，我希望能与这些学者交流学习，加强合作。第三，我希望在这里能提高眼界，提高俄语水平，实现自我价值的提升。
+  本人拟出国学习时间为2年，具体内容、方法及时间安排如下：
+  2022.9-2022.12: 研读文献，分析相机、激光雷达和GNSS在智能农业车辆的实时定位和地图创建的研究现状及经验。
+  2023.1-2023.6: 设计适用于室外环境下的智能农业车辆导航定位算法，首先建立机器人的运动模型和感知模型，分析里程计的误差来源并进行标定，然后使用里程计模型实现激光雷达运动畸变的矫正。通过分析占用栅格地图的表示方法，使用 Gmapping SLAM 算法完成了智能农机作业中的地图构建。
+  2023.7-2023.12 设计适用于测量土壤氮含量的智能机械手抓，建立了机器人在 ROS 中的 URDF 模型，在 Gazebo 中搭建了机器人物理仿真环境，并基于 ros_control 框架实现真实机械手抓与MoveIt 的连接和运动控制。
+  2024.1-2024.6 总结研究成果，撰写硕士学位论文及准备论文答辩工作。
+五、学成回国后的工作/学习计划
+  基于SLAM的智能农用车关键技术研究是一门偏向工程应用的学科，基于农业的SLAM技术只有在得到实际应用后才会发挥最大的价值。所以，在相关基础研究完善后，我将积极寻求科研成果转化，为智慧农业领域尽一份力。
+image1.png
 
 
 Meta Data:
-X-TIKA:Parsed-By: ['org.apache.tika.parser.DefaultParser', 'org.apache.tika.parser.microsoft.ooxml.OOXMLParser']
-extended-properties:DocSecurityString: None
-X-TIKA:Parsed-By-Full-Set: ['org.apache.tika.parser.DefaultParser', 'org.apache.tika.parser.microsoft.ooxml.OOXMLParser']
+cp:revision: 2
+extended-properties:AppVersion: 16.0000
+meta:paragraph-count: 5
+meta:word-count: 447
+X-TIKA:Parsed-By-Full-Set: ['org.apache.tika.parser.DefaultParser', 'org.apache.tika.parser.microsoft.ooxml.OOXMLParser', 'org.apache.tika.parser.image.ImageParser']
 X-TIKA:content_handler: ToTextContentHandler
-X-TIKA:parse_time_millis: 62
-X-TIKA:embedded_depth: 0
-resourceName: b'DBSCAN.docx'
-Content-Length: 7126
-Content-Type: application/vnd.openxmlformats-officedocument.wordprocessingml.document
+dc:creator: Zhang Jia
+extended-properties:Company: 
+dcterms:created: 2023-03-12T13:51:00Z
+meta:line-count: 21
+dcterms:modified: 2023-03-12T13:53:00Z
+meta:character-count: 2554
+meta:character-count-with-spaces: 2996
+extended-properties:TotalTime: 2
+Content-Length: 83031
+Content-Type: ['application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'image/png']
+extended-properties:Application: Microsoft Office Word
+meta:last-author: Zhang Jia
+xmpTPg:NPages: 3
+resourceName: ["b'chinese.docx'", 'image1.png']
+extended-properties:Template: Normal
+X-TIKA:Parsed-By: ['org.apache.tika.parser.DefaultParser', 'org.apache.tika.parser.microsoft.ooxml.OOXMLParser', ['org.apache.tika.parser.DefaultParser', 'org.apache.tika.parser.image.ImageParser']]
+extended-properties:DocSecurityString: None
+X-TIKA:parse_time_millis: ['119', '6']
+X-TIKA:embedded_depth: ['0', '1']
+meta:page-count: 3
+dc:publisher: 
+Transparency Alpha: nonpremultipled
+tiff:ImageLength: 336
+Compression CompressionTypeName: deflate
+Data BitsPerSample: 8 8 8 8
+Data PlanarConfiguration: PixelInterleaved
+Dimension VerticalPixelSize: 0.17639795
+IHDR: width=1639, height=336, bitDepth=8, colorType=RGBAlpha, compressionMethod=deflate, filterMethod=adaptive, interlaceMethod=none
+embeddedRelationshipId: rId6
+Chroma ColorSpaceType: RGB
+tiff:BitsPerSample: 8 8 8 8
+height: 336
+gAMA: 45455
+pHYs: pixelsPerUnitXAxis=5669, pixelsPerUnitYAxis=5669, unitSpecifier=meter
+Chroma Gamma: 0.45455
+Dimension PixelAspectRatio: 1.0
+sRGB: Perceptual
+Compression NumProgressiveScans: 1
+Dimension HorizontalPixelSize: 0.17639795
+Chroma BlackIsZero: true
+Compression Lossless: true
+width: 1639
+Dimension ImageOrientation: Normal
+X-TIKA:embedded_resource_path: /image1.png
+tiff:ImageWidth: 1639
+Chroma NumChannels: 4
+Data SampleFormat: UnsignedIntegral

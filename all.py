@@ -9,7 +9,7 @@ def test_parser():
     tika.initVM()
 
     # List of paths to files to process
-    files_path = ['input/momo.pdf', 'input/DBSCAN.docx', 'input/sample.djvu', 'input/sample2.doc' ]
+    files_path = ['input/momo.pdf', 'input/sample.djvu', 'input/sample2.doc', 'input/chinese.docx' ]
 
     # Output directory path
     output_dir_path = "output"
